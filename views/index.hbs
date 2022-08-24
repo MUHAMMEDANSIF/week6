@@ -1,0 +1,23 @@
+<body>
+  {{>user-header}}
+  <section>
+    <div class="container-fluid">
+    <div class="row">
+        {{#each product}}
+    <div class="col mt-5">
+     <div class="card" style="width: 18rem;height: 450px;">
+  <img class="card-img-top home-product-image" src="/product-image/{{this._id}}.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h1>{{this.mobile}}</h1>
+    <h4>{{this.price}}</h4>
+    <p class="card-text">{{this.description}}</p>
+    <a href="/home/addtocart/{{this._id}}" class="btn btn-primary">add to cart</a>
+    <a href="/home/bynow/{{this._id}}" class="btn btn-danger">By now</a>
+  </div>
+</div>
+        </div>
+{{/each}}
+    </div>
+    </div>
+  </section>
+</body>

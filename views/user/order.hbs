@@ -1,0 +1,45 @@
+
+{{>user-header}}
+<section>
+  <div class="container mt-5">
+  <div class="row">
+   
+    <table class="table mt-5 display" id="alluser">
+  <thead>
+    <tr>
+      <th scope="col">no</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">House Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">contry</th>
+      <th scope="col">address</th>
+
+    </tr>
+  </thead>
+  <tbody>
+ {{#each order}}
+    <tr>
+      <th scope="row">{{inc @index}}</th>
+      <td>{{this.firstname}}</td>
+      <td>{{this.lastname}}</td>
+      <td>{{this.email}}</td>
+      <td>{{this.contry}}</td>
+      <td>{{this.address}}</td>
+      <td>{{this.lastname}}</td>
+      <td>{{this.email}}</td>
+      <td>{{this.contry}}</td>
+      <td>{{this.address}}</td>
+    </tr>
+  {{/each}}
+    <tbody>
+    </table>
+  </div>
+  </div>
+</section>
+ 
+ <script>
+   $(document).ready( function () {
+    $('#alluser').DataTable();
+} );
+ </script>

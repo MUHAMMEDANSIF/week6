@@ -1,0 +1,59 @@
+
+
+
+  <header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <nav class="navbar navbar-expand-xl navbar-light">
+                    <div class="container-fluid">
+                        <a href="#" class="navbar-brand"><h4><b>shoppy admin</b></h4></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/admin">all product</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/admin/all-user">all user</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">all order</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Liquor
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Cider</a></li>
+                                        <li><a class="dropdown-item" href="#">Mead</a></li>
+                                        <li><a class="dropdown-item" href="#">Others</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+
+            <div class="col-lg-2 col-md-3 cart-login ms-auto">
+                <div class="float-end cart mt-2">
+                    {{!-- <a href="#">
+                        <span class="number">10</span>
+                        <img class="img-fluid" src="/images/cart.png" alt="cart" />
+                        <span>Cart</span>
+                    </a> --}}
+                </div>
+
+                <div class="float-end">
+                    <button type="button" class="btn btn-light mt-2 btn-sm "><a style="text-decoration: none;color: black;" href="/logout">Logout</a></button>
+                </div>
+            </div>
+
+          
+        </div>
+    </div>
+</header>

@@ -1,0 +1,26 @@
+ <section>
+    <div class="container mt-5">
+        <div class="row">
+            <h2 class="text-center">Add Product</h2>
+            <form class="mt-5" action="/admin/add-product" method="post" enctype="multipart/form-data">
+                <label for="">Mobile</label>
+                <input type="text" name="mobile" class="form-control">
+
+                  <label for="">Catagery</label>
+                <input type="text" name="categary" class="form-control">
+
+                  <label for="">Price</label>
+                <input type="number" name="price" class="form-control">
+
+                  <label for="">description</label>
+                <input type="text" name="description" class="form-control">
+
+                  <label class="form-label" for="customFile">Choose your image</label>
+                  <input type="file" class="form-control"  name="image">
+
+                  <input class="btn btn-primary mt-5" type="submit" value="add product">
+
+            </form>
+        </div>
+    </div>
+ </section>

@@ -1,0 +1,23 @@
+<section>
+    <div class="container">
+        <div  class="row">
+            <h2 class="text-center mt-5">Edit User</h2>
+            <form class="mt-5" action="/admin/edit-user/{{user._id}}" method="post">
+                <label for="">Name</label>
+                <input type="text" name="name" value="{{user.name}}" class="form-control">
+
+                  <label for="">Email</label>
+                <input type="email" name="email" value="{{user.email}}" class="form-control">
+
+                  {{!-- <label for="">password</label>
+                <input type="password" name="password" class="form-control"> --}}
+{{!-- 
+                  <label class="form-label" for="customFile">Choose your image</label>
+                  <input type="file" class="form-control"  name="image"> --}}
+
+                  <input class="btn btn-primary mt-5" type="submit" value="edit user detiles">
+
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,39 @@
+{{>user-header}}
+<section>
+   
+    <div class="container mt-5">
+    <a href="/admin/add-product"><button class="btn btn-success float-end mb-5">Add Product</button></a>
+    <table class="table" id="allproduct">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">mobile</th>
+      <th scope="col">price</th>
+      <th scope="col">description</th>
+      <th scope="col">image</th>
+      <th scope="col">option</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each cart}}
+    <tr>
+      <th scope="row">{{inc @index}}</th>
+      <td>{{this.mobile}}</td>
+      <td>{{this.price}}</td>
+      <td>{{this.description}}</td>
+      <td><img src="/product-image/{{this.imgid}}.jpg" style="width: 50px;" alt=""></td>
+      <td>
+        <a href="/home/delete-product-cart/{{this._id}}" class="btn btn-danger mt-2" onclick="return confirm('are you sure delete {{this.name}}')">Delete From Cart</a>
+      </td>
+    </tr>
+      {{/each}}
+  </tbody>
+</table>
+    </div>
+</section>
+
+<script>
+  $(document).ready( function () {
+    $('#allproduct').DataTable();
+} );
+</script>
